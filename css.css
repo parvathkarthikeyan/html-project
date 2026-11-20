@@ -1,0 +1,370 @@
+/* BASIC CSS */
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    background-color: #f4f1eb;
+    color: #263548;
+    font-family: Arial;
+}
+
+/* HEADER */
+.header {
+    background-color: white;
+    padding: 20px;
+    border-bottom: 2px solid #ddd;
+    position: relative;
+}
+
+.logo h2 {
+    margin: 0;
+    color: #263548;
+}
+
+.logo span {
+    color: #c84b45;
+}
+
+.logo p {
+    color: grey;
+    margin-bottom: 0;
+}
+
+.editor {
+    position: absolute;
+    right: 30px;
+    top: 25px;
+    color: #263548;
+}
+
+.profile {
+    background-color: #263548;
+    color: white;
+    padding: 10px;
+    border-radius: 30%;
+    display: inline-block;
+}
+
+/* MAIN CONTAINER */
+.container {
+    position: relative;
+    min-height: 100vh;
+}
+
+/* SIDEBAR */
+.sidebar {
+    background-color: #263548;
+    color: white;
+    width: 220px;
+    position: absolute;
+    left: 0;
+    top: 0;
+    bottom: 0;
+    padding: 20px;
+}
+
+.sidebar h3 {
+    color: #b9c3cf;
+    font-size: 13px;
+}
+
+.sidebar nav a {
+    display: block;
+    color: white;
+    text-decoration: none;
+    padding: 12px;
+    margin-bottom: 10px;
+    border-radius: 5px;
+}
+
+.sidebar nav a:hover {
+    background-color: #455970;
+}
+
+.sidebar .active {
+    background-color: #455970;
+}
+
+.sidebar-bottom {
+    position: absolute;
+    bottom: 20px;
+    left: 20px;
+}
+
+/* MAIN CONTENT */
+.main-content {
+    margin-left: 220px;
+    padding: 30px;
+}
+
+.welcome {
+    background-color: white;
+    padding: 20px;
+    margin-bottom: 25px;
+    border-radius: 8px;
+}
+
+.welcome h1 {
+    color: #263548;
+}
+
+.welcome p {
+    color: grey;
+}
+
+.add-button {
+    display: inline-block;
+    background-color: #c84b45;
+    color: white;
+    padding: 12px 18px;
+    text-decoration: none;
+    border-radius: 5px;
+}
+
+.add-button:hover {
+    background-color: #963c38;
+}
+
+/* DASHBOARD CARDS */
+.stats {
+    margin-bottom: 25px;
+}
+
+.stat-card {
+    display: inline-block;
+    background-color: white;
+    width: 23%;
+    padding: 18px;
+    margin: 5px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    vertical-align: top;
+    animation: appear 1s;
+}
+
+.stat-card p {
+    color: grey;
+}
+
+.stat-card h2 {
+    color: #263548;
+    font-size: 28px;
+}
+
+/* COMMON PANELS */
+.panel {
+    background-color: white;
+    padding: 25px;
+    margin-bottom: 25px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+}
+
+.panel h2 {
+    color: #263548;
+}
+
+.small-heading {
+    color: #c84b45;
+    font-size: 11px;
+}
+
+/* FORM */
+.form-grid {
+    padding: 10px;
+}
+
+.form-group {
+    margin-bottom: 18px;
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 8px;
+    font-weight: bold;
+}
+
+.form-group input,
+.form-group select,
+.form-group textarea {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    background-color: white;
+}
+
+.form-group input:focus,
+.form-group textarea:focus {
+    border: 2px solid #c84b45;
+}
+
+.full-width {
+    width: 100%;
+}
+
+/* SUBMIT BUTTON */
+.submit-button {
+    background-color: #263548;
+    color: white;
+    padding: 13px 22px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.submit-button:hover {
+    background-color: #c84b45;
+}
+
+/* TABLE */
+.table-container {
+    width: 100%;
+    overflow-x: auto;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+th {
+    background-color: #263548;
+    color: white;
+    padding: 13px;
+}
+
+td {
+    padding: 12px;
+    border-bottom: 1px solid #ddd;
+    background-color: white;
+}
+
+.status {
+    background-color: #f5e5c5;
+    padding: 6px;
+    border-radius: 5px;
+}
+
+.status.Approved {
+    background-color: #d9f0df;
+    color: green;
+}
+
+.status.Published {
+    background-color: #dce5fa;
+    color: blue;
+}
+
+.action-button {
+    background-color: #263548;
+    color: white;
+    padding: 7px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    margin: 2px;
+}
+
+.action-button:hover {
+    background-color: #c84b45;
+}
+
+.comment-button {
+    background-color: green;
+}
+
+/* WORKFLOW */
+.workflow {
+    margin-top: 20px;
+}
+
+.workflow-step {
+    background-color: #f4f1eb;
+    border: 1px solid #ddd;
+    border-left: 4px solid #c84b45;
+    padding: 15px;
+    margin-bottom: 12px;
+    border-radius: 5px;
+}
+
+.workflow-step span {
+    color: #c84b45;
+    font-weight: bold;
+}
+
+.workflow-step h3 {
+    color: #263548;
+}
+
+.workflow-step p {
+    color: grey;
+}
+
+/* FOOTER */
+footer {
+    background-color: #263548;
+    color: white;
+    padding: 20px;
+    margin-top: 20px;
+}
+
+/* SIMPLE ANIMATION */
+@keyframes appear {
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
+}
+nav a:hover {
+    background-color: #444;
+    color: white;
+}
+
+.submit-button:hover {
+    background-color: #444;
+    color: white;
+}
+
+.add-button:hover {
+    background-color: #444;
+    color: white;
+}
+.stat-card:hover {
+    background-color: rgb(135, 115, 115);
+}
+
+.workflow-step:hover {
+    background-color: rgb(226, 212, 212);
+}
+.delete-button {
+    background-color: rgb(200, 75, 69);
+}
+
+.delete-button:hover {
+    background-color: rgb(150, 60, 56);
+}
+
+/* VIEW BUTTON */
+.view-button {
+    background-color: rgb(40, 122, 89);
+}
+
+.view-button:hover {
+    background-color: rgb(24, 84, 60);
+}
+
+/* DELETE BUTTON */
+.delete-button {
+    background-color: rgb(200, 75, 69);
+}
+
+.delete-button:hover {
+    background-color: rgb(150, 60, 56);
+}
